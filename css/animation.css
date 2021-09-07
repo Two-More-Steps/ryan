@@ -1,0 +1,86 @@
+
+@keyframes ear_lt {
+    from{
+        left: 5%;
+    }
+    to{
+
+    }
+    
+}
+@keyframes ear_gt {
+    from{
+
+    }
+    to{
+        right: 5%;
+    }
+}
+
+@keyframes doridori_brow_lt{
+    from{
+        left: 23%;
+        transform: scale(1.1);
+    }
+    to{
+        left: 13%;
+    }
+}
+@keyframes doridori_brow_gt{
+    from{
+        right: 13%;
+    }
+    to{
+        right: 23%;
+        transform: scale(1.1);
+    }
+}
+
+@keyframes doridori_eye_lt{
+    from{
+        left: 30%;
+        transform: scale(1.1);
+    }
+    to{
+        left: 20%;
+    }
+}
+
+@keyframes doridori_eye_gt{
+    from{
+        right: 20%;
+    }
+    to{
+        right: 30%;
+        transform: scale(1.1);
+    }
+}
+
+@keyframes doridori_snout{
+    from{
+        left: 30px;
+    }
+    to{
+        left: -30px;
+    }
+}
+
+@keyframes doridori_mouth_lt{
+    from{
+        width: 80px;
+        height: 80px;
+    }
+    to{
+
+    }
+}
+
+@keyframes doridori_mouth_gt{
+    from{
+        
+    }
+    to{
+        width: 80px;
+        height: 80px;
+    }
+}

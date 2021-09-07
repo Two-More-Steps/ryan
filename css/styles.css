@@ -1,0 +1,151 @@
+body{
+    transition: 3s;
+}
+body.yellow{
+    background: #FAE100;
+}
+.center{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/* d6a034 */
+#ryan{
+    position: relative;
+    cursor: pointer;
+    transition: 3s;
+}
+#ryan:hover{
+    transform: rotate(15deg) scale(1.5);
+}
+
+/* 귀 */
+.ear{
+    background: #d6a034;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    border: 8px solid #000;
+    position: absolute;
+    top: -2%;
+}
+.ear.lt{
+    left: 10%;
+    animation: ear_lt 0.5s ease-in-out infinite alternate;
+}
+.ear.gt{
+    right: 10%;
+    animation: ear_gt 0.5s ease-in-out infinite alternate;
+}
+
+/* 얼굴 */
+
+.face{
+    width: 500px;
+    height: 500px;
+    background: #d6a034;
+    border-radius: 100%;
+    border: 8px solid #000;
+    position: relative;
+}
+
+/* 눈썹 */
+.brow{
+    width: 100px;
+    height: 20px;
+    background: #000;
+    border-radius: 25px;
+    position: absolute;
+    top: 30%;
+}
+.brow.lt{
+    left: 18%;
+    animation: doridori_brow_lt 0.5s ease-in-out infinite alternate;
+}
+.brow.gt{
+    right: 18%;
+    animation: doridori_brow_gt 0.5s ease-in-out infinite alternate;
+}
+
+/* 눈 */
+.eye{
+    width: 30px;
+    height: 30px;
+    background: #000;
+    border-radius: 100%;
+    position: absolute;
+    top: 42%;
+}
+.eye.lt{
+    left: 25%;
+    animation: doridori_eye_lt 0.5s ease-in-out infinite alternate;
+}
+.eye.gt{
+    right: 25%;
+    animation: doridori_eye_gt 0.5s ease-in-out infinite alternate;
+}
+
+/* 입 */
+.ip{
+    background: cyan;
+    position: relative;
+}
+.ip .box{
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    top: -27px;
+    left: -2px;
+    border-radius: 100%;
+    background: #fff;
+    animation: doridori_mouth_gt 0.5s ease-in-out infinite alternate;
+}
+.mouth{
+    background: #fff;
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    position: absolute;
+    border: 8px solid #000;
+    top: -35px;
+}
+.mouth.lt{
+    left: -10px;
+    animation: doridori_mouth_gt 0.5s ease-in-out infinite alternate;
+}
+.mouth>div{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background: #fff;
+    position: absolute;
+    z-index: 10;
+}
+.mouth.gt{
+    right: -10px;
+    animation: doridori_mouth_lt 0.5s ease-in-out infinite alternate;
+}
+/* 코 */
+.nose{
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    background: #000;
+    z-index: 100;
+}
+.snout{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    bottom: 40%;
+    animation-name: doridori_snout;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
